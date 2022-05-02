@@ -1,0 +1,15 @@
+.no-scroll{
+  --overflow: hidden;
+}
+
+@media(orientation:portrait) {
+  .size-number{
+    font-size: 12em;
+  }
+}
+
+@media(orientation:landscape) {
+  .size-number{
+    font-size: 6em;
+  }
+}

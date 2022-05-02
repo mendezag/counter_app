@@ -1,0 +1,11 @@
+<ion-header [translucent]="true">
+ <ion-button class="ion-margin-top ion-margin-bottom" expand="block" (click)="up()" [disabled]="n==99"> + </ion-button>
+</ion-header>
+
+<ion-content class="ion-text-center no-scroll" [ngClass]="{'ion-padding': screenOrientation.type === screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY}">
+  <ion-text class="size-number">{{showNumber}}</ion-text>
+</ion-content>
+
+<footer>
+  <ion-button class="ion-margin-top ion-margin-bottom" expand="block" (click)="down()" [disabled]="n==0"> - </ion-button>
+</footer>
